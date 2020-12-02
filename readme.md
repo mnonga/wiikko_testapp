@@ -6,20 +6,20 @@ Ce projet contient la partie serveur (API)
 
 Creer un base de données vide nommée **testapp**  
 
-````
+````dotenv
 DATABASE_URL=mysql://root:password@127.0.0.1:3306/testapp
 ````
 
 ## Installer les dependances
 
 ````
-composer install
+$ composer install
 ````
 
 ## Generer le schema de la BD et seeder les données
 
 ```
-php artisan migrate:fresh --seed
+$ php artisan migrate:fresh --seed
 ```
 
 ## Lancer le serveur:
@@ -27,7 +27,7 @@ php artisan migrate:fresh --seed
 S'assurer que le port 8000 est libre
 
 ````
-php artisan serve
+$ php artisan serve
 ````
 
 ## Identifiant de connexion
@@ -37,3 +37,9 @@ php artisan serve
   "password": "12345678"
 }
 ```
+
+## Executer les tests
+
+````
+$ vendor/bin/phpunit
+````
