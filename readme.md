@@ -1,5 +1,7 @@
 # Projet de test pour embauche par Michée NONGA
 
+Ce projet contient la partie serveur (API)  
+
 ## Configuration de la base des données
 
 Creer un base de données vide nommée **testapp**  
